@@ -1,3 +1,145 @@
+
+.FSize {
+  font-size: 18px
+}
+
+.FW {
+  font-weight: 600;
+}
+
+.txtShadow{
+    text-shadow: #49176d 1px 0 10px;
+}
+
+/***Puntero***/
+
+.Puntero {
+  background-image: linear-gradient(to right,
+      #000000,
+      #000000,
+      #000000);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 2px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Puntero:before {
+  content: '';
+  background: #49176d;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Puntero:hover {
+  background-position: 0;
+  text-shadow: 0 0 3px #49176d;
+}
+
+.Puntero:hover::before {
+  width: 100%;
+}
+
+/*
+.BorderBook:hover{
+        border: 2px solid #49176d;
+    padding: 10px;
+    border-radius: 25px;
+}*/
+
+.Bcolor {
+    background-color: #49176d;
+    border-color: #49176d;
+    color: #ffffff;
+}
+
+.Bcolor:hover {
+    border-color: #724394 !important;
+    background-color: #724394 !important; 
+    color: #ffffff;
+    box-shadow: 0 5px 13px -2px #724394;
+}
+
+.PosterTM{
+    width: 800px;
+}
+
+.ptTitle{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.ptTitle2{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.ptTitle4{
+    padding-top: 80px;
+}
+
+.colorUPP {
+    color: #49176d;
+}
+
+.TituloQS {
+    color: #49176d;
+    text-align: center;
+    font-weight: 750;
+}
+
+.Titulo {
+    color: #49176d;
+    text-align: center;
+    font-weight: 850;
+}
+
+.Titulo2 {
+    color: #49176d;
+    text-align: center;
+    font-weight: 345;
+}
+
+
+.ptCard{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.shadowCard{
+    box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+    -webkit-box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+    -moz-box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+}
+
+.zoom{
+  transition: 1.1s ease;
+   -moz-transition: 1.1s ease; /* Firefox */
+   -webkit-transition: 1.1s ease; /* Chrome - Safari */
+   -o-transition: 1.1s ease; /* Opera */
+}
+.zoom:hover{
+  transform : scale(1.1);
+  -moz-transform : scale(1.1); /* Firefox */
+  -webkit-transform : scale(1.1); /* Chrome - Safari */
+  -o-transform : scale(1.1); /* Opera */
+  -ms-transform : scale(1.1); /* IE9 */
+}
+
+.ImgCard{
+    width: 190px;
+    height: 255px;
+}
 /***Footer***/
 .FooterColorTxt {
     color: #ffffff;
